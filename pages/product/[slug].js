@@ -27,11 +27,11 @@ const ProductDetail = ({ product, products }) => {
 		<div>
 			<div className="flex md:gap-[40px] m-[40px] mt-[60px] text-[#3b1e1e]">
 				<div>
-					<div className="rounded-xl bg-[#ebebeb] md:w-[400px] md:h-[400px] w-[130px] h-[130px] cursor-pointer hover:scale-105 ease-in duration-300 hover:bg-[#4682B4]">
+					<div className="rounded-xl bg-[#ebebeb] md:w-[400px] md:h-[400px] w-[80px] h-[80px] cursor-pointer hover:scale-105 ease-in duration-300 hover:bg-[#4682B4]">
 						<img
 							src={urlFor(image && image[index])}
 							alt=""
-							className="md:h-full md:w-full h-[130px] w-[130px]"
+							className="md:h-full md:w-full h-[80px] w-[80px]"
 						/>
 					</div>
 					<div className="md:flex hidden gap-[10px] mt-[10px]">
@@ -50,8 +50,8 @@ const ProductDetail = ({ product, products }) => {
 					</div>
 				</div>
 				<div className="product-details-desc md:text-left text-right">
-					<h1 className="md:pr-[0px] pr-[10px] text-4xl">{name}</h1>
-					<div className="text-[#4682B4] mt-4 flex gap-1 md:justify-start justify-end md:pr-[0px] pr-[10px]">
+					<h1 className="md:pr-[0px] pr-[80px] text-4xl">{name}</h1>
+					<div className="text-[#4682B4] mt-4 flex gap-1 md:justify-start justify-end md:pr-[0px] pr-[80px]">
 						<div className="flex">
 							<AiFillStar />
 							<AiFillStar />
@@ -61,12 +61,12 @@ const ProductDetail = ({ product, products }) => {
 						</div>
 						<p>(20)</p>
 					</div>
-					<h4 className="mt-3 md:pr-[0px] pr-[10px]">Details:</h4>
-					<p className="mt-3 md:pr-[0px] pr-[10px]">{detail}</p>
-					<p className="text-[26px] font-bold mt-7 text-[#4682B4] md:pr-[0px] pr-[10px]">
+					<h4 className="mt-3 md:pr-[0px] pr-[80px]">Details:</h4>
+					<p className="mt-3 md:pr-[0px] pr-[80px]">{detail}</p>
+					<p className="text-[26px] font-bold mt-7 text-[#4682B4] md:pr-[0px] pr-[80px]">
 						${price}
 					</p>
-					<div className="flex gap-[20px] mt-[10px] md:float-left float-right mr-[10px]">
+					<div className="flex gap-[20px] mt-[10px] md:float-left float-right pr-[80px]">
 						<h3>Quantity: </h3>
 						<p className="border-gray-900 border-[1px] flex">
 							<span
@@ -87,13 +87,13 @@ const ProductDetail = ({ product, products }) => {
 					<div className="flex md:gap-[30px] gap-[10px] mt-[50px]">
 						<button
 							type="button"
-							className="py-2 px-4 bg-white text-[#4682B4] rounded-lg shadow-md hover:bg-[#4682B4] hover:text-white hover:border-white hover:border-solid hover:border-2 hover:font-bold focus:outline-none focus:ring-2 w-[150px] md:mt-10 h-[40px] focus:ring-black-400 focus:ring-opacity-75 hover:scale-105 align-center ease-in duration-300"
+							className="py-2 px-4 bg-white text-[#4682B4] rounded-lg shadow-md hover:bg-[#4682B4] hover:text-white hover:border-white hover:border-solid hover:border-2  focus:outline-none focus:ring-2 md:mt-10 h-[40px] focus:ring-black-400 focus:ring-opacity-75 hover:scale-105 align-center ease-in duration-300 md:w-[157px] w-[120px]"
 							onClick={() => addCart(product, qty)}>
 							Add to Cart
 						</button>
 						<button
 							type="button"
-							className="py-2 px-4 bg-[#4682B4] text-white rounded-lg shadow-md hover:bg-white hover:text-[#4682B4] hover:border-[#4682B4] hover:border-solid hover:border-2 hover:font-bold focus:outline-none focus:ring-2 w-[150px] md:mt-10 h-[40px] focus:ring-black-400 focus:ring-opacity-75 hover:scale-105 align-center ease-in duration-300"
+							className="py-2 px-4 bg-[#4682B4] text-white rounded-lg shadow-md hover:bg-white hover:text-[#4682B4] hover:border-[#4682B4] hover:border-solid hover:border-2 focus:outline-none focus:ring-2 md:w-[157px] w-[100px] md:mt-10 h-[40px] focus:ring-black-400 focus:ring-opacity-75 hover:scale-105 align-center ease-in duration-300 mr-5"
 							onClick={handleBuyNow}>
 							Buy Now
 						</button>

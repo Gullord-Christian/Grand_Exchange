@@ -12,7 +12,7 @@ const Navbar = () => {
 			<p className="text-[#3b1e1e] text-[21px] font-semibold tracking-widest hover:underline">
 				<Link href="/">Grand Exchange</Link>
 			</p>
-			<hr className="md:w-[45%] w-[35%]" />
+			<hr className="md:w-[45%] w-[25%]" />
 			<button
 				type="button"
 				className="text-[25px] text-[#3b1e1e] cursor-pointer border-none bg-[#F5F5F5] transition transform:scale 200 hover:-translate-y-1 ease-in relative mt-[0px] mb-4 h-2 w-[28px]"
